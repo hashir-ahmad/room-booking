@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./styles/landing-page.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="./scripts/room-selection.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+        <title>Room Booking</title>
+    </head>
+    <body>
+        <h1>University of Portsmouth Room Booking</h1>
+        <div id="room-lookup">
+          <h2>Select the room you wish to book</h2>
+          <select name="buildings" id="building-selection" onchange="updateRooms(this.value)">
+            <option value="lion_gate">Lion gate</option>
+            <option value="anglesea">Anglesea</option>
+            <option value="buckingham">Buckingham</option>
+            <option value="burnaby">Burnaby</option>
+            <option value="dennis_sciama">Dennis Sciama Building</option>
+            <option value="eldon">Eldon</option>
+            <option value="hampshire_terrace">Hampshire Terrace</option>
+            <option value="institute_of_marine_sciences">Institute of Marine Sciences</option>
+            <option value="james_watson_west">James Watson West</option>
+            <option value="king_henry">King Henry</option>
+            <option value="mildam">Mildam</option>
+            <option value="park">Park</option>
+            <option value="portland">Portland</option>
+            <option value="richmond">Richmond</option>
+            <option value="rotunda">Rotunda</option>
+            <option value="spinnaker">Spinnaker Building</option>
+            <option value="st_andrews_court">St. Andrew's Court</option>
+            <option value="st_georges">St. George's</option>
+            <option value="st_michaels">St. Michael's</option>
+            <option value="library">The University Library</option>
+            <option value="william_beatty">Wiliam Beatty</option>
+            <option value="wiltshire">Wiltshire</option>
+          </select>
+          <select name="rooms" id="room-selection" disabled>
+          </select>
+        </div>
+    </body>
+</html>

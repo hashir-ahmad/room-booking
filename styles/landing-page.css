@@ -1,0 +1,81 @@
+body, html {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  display: block;
+  position: static;
+
+  color: #AF0097;
+  text-align: center;
+
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+
+  font-weight: 100;
+  font-size: 250%;
+}
+
+#room-lookup {
+  position: relative;
+  display: block;
+
+  width: 60%;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#room-lookup h2 {
+  display: block;
+  position: static;
+
+  color: #AF0097;
+  text-align: left;
+
+  margin: 0;
+  padding: 0;
+
+  font-weight: 100;
+  font-size: 150%;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: relative;
+  display: inline-block;
+
+  text-align: left;
+  font-size: 100%;
+
+  background-color: white;
+
+  width: 49.5%;
+  padding: 0;
+  margin: 0;
+  margin-top: 2%;
+
+  border: none;
+  border-bottom: 1px solid grey;
+  border-radius: 0;
+}
+
+#disabled {
+  input: disabled;
+}
