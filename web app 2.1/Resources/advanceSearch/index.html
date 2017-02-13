@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>University of Portsmouth: Room booking app</title>
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 days">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <p id="uniHeading">
+      University of Portsmouth Room Explorer App
+    </p>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+          <div id="textLogo">
+            <h2><b>Portsmouth Uni</b></h2>
+            <p><em class="beautifulRedEmphasis">Room</em> Explorer App</p>
+          </div>
+        </header>
+        <div class="mdl-layout__drawer">
+        <img id="logo1" src="../Logo/mainLogo.jpg" alt="Khail ul rehman main logo"/>
+          <span class="mdl-layout-title">Uni of Portsmouth</span>
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="../../"><b>Home</b></a>
+            <a class="mdl-navigation__link" href="../roomBooking/"><b>Make a booking</b></a>
+            <a class="mdl-navigation__link" href="../roomExplorer/"><b>Explore the room</b></a>
+            <a class="mdl-navigation__link" href="index.html"><b>Advance search</b></a>
+            <a class="mdl-navigation__link" href="../studentAllowance/"><b>Student Allowance</b></a>
+          </nav>
+        </div>
+        <div class="mdl-layout__content">
+          <main>
+            <div class="container">
+              <div class="row">
+                <div class="ten columns">
+                  <h3>Room requirements</h3>
+                </div>
+              </div>
+              <form id="bookingForm" method="post">
+                <div class="row">
+                  <div class="three columns">
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="formProjector">
+                      <input type="checkbox" id="formProjector" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Projector</span>
+                    </label>
+                  </div>
+                  <div class="three columns">
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="formAllowEating">
+                      <input type="checkbox" id="formAllowEating" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Allowed eating</span>
+                    </label>
+                  </div>
+                  <div class="three columns">
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="formNearToilet">
+                      <input type="checkbox" id="formNearToilet" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Toilet in the building</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="six columns">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" pattern='-?[0-9]*(\.[0-9]+)?' id="formDate">
+                      <label class="mdl-textfield__label">How many people are attending it?</label>
+                      <span class="mdl-textfield__error">Enter valid number of students</span>
+                    </div>
+                  </div>
+                  <div class="six columns">
+                    <div class="mdl-selectfield">
+                      <label>How much demand should it have</label>
+                      <select class="browser-default">
+                        <option value="" disabled selected>Select</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="six columns">
+                    <div class="mdl-selectfield">
+                      <label>Any particular building</label>
+                      <select class="browser-default">
+                        <option value="" disabled selected>Select</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="six columns">
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="formDisabledAccess">
+                      <input type="checkbox" id="formDisabledAccess" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Disabled Access</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="six columns">
+                    <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" name="bookingForm" value="Submit" id="formSubmit">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </main>
+          <script async src="../javascript/index.js"></script>
+          <script async src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+          <script async src="https://code.jquery.com/jquery-1.12.4.js"></script>
+          <script async src="index.js"></script>
+        </div>
+      </div>
+  </body>
+</html>

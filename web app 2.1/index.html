@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>University of Portsmouth: Room booking app</title>
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 days">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="Resources/css/main.css">
+    <link rel="stylesheet" href="Resources/css/skeleton.css">
+    <link rel="stylesheet" href="Resources/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="Resources/typedJS/js/typed.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <!-- <div class="backgroundSlideshow">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div> -->
+    <p id="uniHeading">
+      University of Portsmouth Room Booking App
+    </p>
+      <!-- Always shows a header, even in smaller screens. -->
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+          <div id="textLogo">
+            <h2><b>Portsmouth Uni</b></h2>
+            <p><em class="beautifulRedEmphasis">Room</em> Booking App</p>
+          </div>
+        </header>
+        <div class="mdl-layout__drawer">
+        <img id="logo1" src="Resources/Logo/mainLogo.jpg" alt="Khail ul rehman main logo"/>
+          <span class="mdl-layout-title">Uni of Portsmouth</span>
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="index.html"><b>Home</b></a>
+            <a class="mdl-navigation__link" href="Resources/roomBooking/"><b>Make a booking</b></a>
+            <a class="mdl-navigation__link" href="Resources/roomExplorer/"><b>Explore the room</b></a>
+            <a class="mdl-navigation__link" href="Resources/advanceSearch/"><b>Advance search</b></a>
+            <a class="mdl-navigation__link" href="Resources/studentAllowance/"><b>Student Allowance</b></a>
+          </nav>
+        </div>
+        <div class="mdl-layout__content">
+          <main>
+            <div class="container">
+              <div class="row">
+                <div class="ten columns">
+                  <form action="#" id="searchBar">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" id="mainSearch">
+                      <label class="mdl-textfield__label" for="mainSearch">Enter room number you wish to book
+                        <i class="material-icons">search</i></label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row">
+                <div class="ten columns">
+                  <h3>I want to do something else ...</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="six columns">
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">Advance search</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Lets search!
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="six columns">
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">Room explorer</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Lets explore!
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="six columns">
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">Student allowance</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Lets go!
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="six columns">
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">Anything else I have missed</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aenan convallis.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        View Updates
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <script async src="Resources/javascript/index.js"></script>
+          <script async src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+          <script async src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+body {
+  line-height: normal;
+  width: auto;
+  background-color: white;
+}
+
+
+
+
+.mdl-checkbox {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.mdl-selectfield select {
+  color: black;
+}
+
+.mdl-selectfield label, .mdl-selectfield select{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+#searchBar {
+  margin-top: 50%;
+}
+
+
+.mdl-textfield {
+  margin-bottom: 32px;
+}
+
+ footer {
+ }
+
+.mdl-layout__header {
+  background-color: transparent;
+}
+
+
+/*Normal mobile */
+ @media (min-width: 320px) {
+   #uniHeading {
+     position: absolute;
+     font-size: 17px;
+     display: none;
+   }
+
+   #textLogoR{
+     display: none;
+   }
+
+   header {
+     height: 40px;
+     position: absolute;
+   }
+
+   #welcomeLine {
+     font-size: 30px;
+     padding-top: 140px;
+   }
+
+   #textLogo {
+     visibility: visible;
+     margin-left: 18%;
+   }
+
+   #cr {
+     font-size: 15px;
+     /*font-family: 'Roboto', cursive;*/
+   }
+}
+
+/* phablet size */
+@media (min-width: 412px) {
+  #uniHeading {
+    position: absolute;
+  }
+
+  #welcomeLine {
+    font-size: 35px;
+    padding-top: 140px;
+  }
+
+    #textLogo {
+      visibility: visible;
+      margin-left: 23%;
+    }
+
+     #cr {
+       font-size: 15px;
+     }
+
+     header {
+       position: absolute;
+     }
+ }
+
+ /* Just about a tablet */
+ @media (min-width: 750px) {
+   #welcomeLine {
+     font-size: 50px;
+     padding-top: 100px;
+   }
+
+   #textLogo {
+     visibility: visible;
+     margin-left: 35%;
+   }
+
+   #uniHeading {
+     font-size: 35px;
+     position: absolute;
+   }
+
+     #cr {
+       font-size: 15px;
+     }
+ }
+
+ /* Larger than desktop */
+ @media (min-width: 1200px) {
+
+   #welcomeLine {
+     font-size: 80px;
+   }
+
+   #textLogoR {
+     display: block;
+   }
+
+   #uniHeading {
+     position: fixed;
+     font-size: 32px;
+     margin-top: 12px;
+     display: block;
+     /*transform: translate(-120%)*/
+   }
+
+   header {
+     height: 90px;
+     position: fixed;
+   }
+
+   #textLogo {
+     visibility: hidden;
+   }
+
+     #cr {
+       font-size: 15px;
+     }
+
+ }
